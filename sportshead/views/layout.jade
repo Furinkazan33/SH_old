@@ -1,0 +1,23 @@
+doctype html
+html(ng-app="cetelemHeadsGameApp")
+  head
+    title= title
+    link(rel="stylesheet", href="bower_components/materialize/dist/css/materialize.min.css")
+
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/materialize/dist/js/materialize.min.js")
+    script(src="bower_components/angular/angular.min.js")
+    script(src="bower_components/angular-route/angular-route.min.js")
+    script(src="bower_components/phaser/build/phaser.min.js")
+    script(src="bower_components/phaser/build/phaser.min.js")
+    script(src="/socket.io/socket.io.js")
+    
+    script(src="javascripts/extensions/require.js")
+    script(src="javascripts/app/lib/utils.js")
+    
+    script(src="javascripts/app/game/main.js")
+    script(src="javascripts/app/game/controllers/mainmenucontroller.js")
+    script(src="javascripts/app/game/directives/phaser.js")
+    script(src="javascripts/app/game/factories/socketio.js")
+  body
+    block content

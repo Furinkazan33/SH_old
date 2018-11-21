@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "amd",
+    "target": "ES5",
+    "sourceMap": false,
+    "outFile": "../cetelemheads-game/public/javascripts/game.js",
+    "rootDir": "sources"
+  },
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}

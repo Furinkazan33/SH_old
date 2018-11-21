@@ -1,0 +1,13 @@
+[{
+  "id": "player_italia",
+  "name": "Italie",
+  "image": "images/assets/game/players/player.png"
+}, {
+  "id": "player_mathieu",
+  "name": "Mathieu Vidalies",
+  "image": "images/assets/game/players/mathieu.png"
+}, {
+  "id": "player_kevin",
+  "name": "Kevin Bonnoron",
+  "image": "images/assets/game/players/kevin.png"
+}]

@@ -1,0 +1,56 @@
+{
+  "id": "onlinePopup",
+  "component": "Window",
+  "draggable": false,
+  "position": { "x": 100, "y": 100 },
+  "width": 900,
+  "height": 400,
+  "layout": [3, 4],
+  "children": [{
+    "component": "Label",
+    "position": "center left",
+    "width": 275,
+    "height": 80,
+    "text": "Login",
+    "font": {
+      "size": "25px",
+      "family": "Arial"
+    }
+  }, {
+    "id": "loginInput",
+    "component": "Input",
+    "position": "center left",
+    "width": 450,
+    "height": 30
+  }, null, {
+    "component": "Label",
+    "position": "center left",
+    "width": 200,
+    "height": 80,
+    "text": "Password",
+    "font": {
+      "size": "25px",
+      "family": "Arial"
+    }
+  }, {
+    "id": "passwordInput",
+    "component": "Input",
+    "position": "center left",
+    "width": 450,
+    "height": 30
+  }, null, null, {
+    "id": "onlineLaunchButton",
+    "component": "Button",
+    "position": "center left",
+    "text": "Connexion",
+    "width": 225,
+    "height": 80
+  }, {
+    "id": "onlineCancelButton",
+    "component": "Button",
+    "position": "center left",
+    "text": "Annuler",
+    "width": 225,
+    "height": 80
+  }]
+}

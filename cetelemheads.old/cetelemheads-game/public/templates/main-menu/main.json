@@ -1,0 +1,28 @@
+{
+  "id": "mainMenuWindow",
+  "component": "Window",
+  "header": { "position": { "x": 0, "y": 0 }, "height": 40, "text": "Menu principal" },
+  "draggable": false,
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "width": 1000,
+  "height": 500,
+  "layout": [1, 5],
+  "children": [null,{
+    "id": "offlineButton",
+    "component": "Button",
+    "position": "center",
+    "text": "Hors ligne",
+    "width": 400,
+    "height": 80
+  }, null, {
+    "id": "onlineButton",
+    "component": "Button",
+    "position": "center",
+    "text": "En ligne",
+    "width": 400,
+    "height": 80
+  }]
+}

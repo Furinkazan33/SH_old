@@ -1,0 +1,10 @@
+{
+  "name": "sportsheads",
+  "dependencies": {
+    "phaser": "*",
+    "requirejs": "*",
+    "materialize": "*",
+    "angular": "*",
+    "angular-route": "*"
+  }
+}

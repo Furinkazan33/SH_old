@@ -1,0 +1,45 @@
+{
+  "id": "lobbyWindow",
+  "component": "Window",
+  "header": { "position": { "x": 0, "y": 0 }, "height": 40, "text": "Lobby" },
+  "draggable": false,
+  "position": { "x": 0, "y": 0 },
+  "width": 1200,
+  "height": 750,
+  "layout": [1, 2],
+  "children": [{
+    "component": "Layout",
+      "width": 1200,
+      "height": 500,
+      "layout": [2, 1],
+      "position": "left",
+      "children": [{
+        "component": "Layout",
+        "position": "left",
+        "width": 900,
+        "height": 750,
+        "children": [{
+          "component": "Label",
+          "position": "top",
+          "width": 900,
+          "height": 700
+        }, {
+          "component": "Input",
+          "id": "chatMessageInput",
+          "position": "bottom",
+          "width": 900,
+          "height": 30
+        }]
+      }, {
+        "component": "List",
+        "id": "lobbyPlayersList",
+        "position": "right",
+        "dragY": true,
+        "dragX": false,
+        "width": 300,
+        "height": 750,
+        "layout": [null, 10],
+        "children": []
+    }]
+  }]
+}

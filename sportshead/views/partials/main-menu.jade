@@ -1,0 +1,70 @@
+.container(style="width: 1150px; height: 700px; padding: 25px")
+  .card-panel
+    .row
+      .card.white.lighten-2
+        .card-content
+          p
+          .row
+            #offlineModal.modal
+              .modal-content
+                h4 Choisissez vos options
+                .row
+                  form.col.s12
+                    .row
+                      .input-field.col.s2
+                        label(for="offline.players.amount") Nombre de joueurs
+                      .input-field.col.s4
+                        p
+                          input(id="offline.players.amount.two", ng-model="models.players.amount", type="radio", value="2")
+                          label(for="offline.players.amount.two") 2
+                      .input-field.col.s4
+                        p
+                          input(id="offline.players.amount.four", ng-model="models.players.amount", type="radio", value="4")
+                          label(for="offline.players.amount.four") 4
+                    .row
+                      .input-field.col.s2
+                        label Activer les gamelles
+                      .input-field.col.s8
+                        p
+                          input(id="offline.goals.tinEnabled", type="checkbox", checked="")
+                          label(for="offline.goals.tinEnabled")
+                            | Oui
+                            label
+                    .row
+                      .input-field.col.s2
+                        label Activer les bonus
+                      .input-field.col.s8
+                        input(id="offline.events.bonuses", type="checkbox", checked="")
+                        label(for="offline.events.bonuses")
+                          | Oui
+                          label
+                    .row
+                      .input-field.col.s2
+                        label Activer les malus
+                      .input-field.col.s8
+                        p
+                          input(id="offline.events.penalties", type="checkbox", checked="")
+                          label(for="offline.events.penalties") Oui
+                    .row
+                      .input-field.col.s2
+                        label Activer les autres événement
+                      .input-field.col.s8
+                        p
+                          input(id="offline.events.others", type="checkbox", checked="")
+                          label(for="offline.events.others") Oui
+                    .row(ng-repeat="a in range(models.players.amount) track by $index")
+                      .input-field.col.s2
+                        label(for="offline.players.skins.{{$index}}") Skin joueur {{$index+1}}
+                      .input-field.col.s8
+                        select(id="offline.players.skins.{{$index}}")
+                          option(value="player_italia") Italie
+                          option(value="player_mathieu") Mathieu Vidalies
+                          option(value="player_kevin") Kevin Bonnoron
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href="#!", ng-click="events.offline.submit()") Jouer
+            button.btn.modal-trigger.waves-effect.waves-light.btn.col.s6.offset-s3(data-target="offlineModal") Hors-ligne
+          .row
+            button.btn.modal-trigger.waves-effect.waves-light.btn.col.s6.offset-s3(id="online.submit", data-target="offlineModal") En-ligne
+script.
+  $(".modal-trigger").leanModal();
+  $("select").material_select();

@@ -1,0 +1,49 @@
+{
+  "id": "offlinePopup",
+  "component": "Window",
+  "draggable": false,
+  "position": { "x": 0, "y": 0 },
+  "width": 1000,
+  "height": 700,
+  "layout": [3, 6],
+  "children": [
+    {"component": "Label", "position": "center left", "width": 275, "height": 80, "text": "Nombre de joueur", "font": {"size": "28px","family": "Arial"}},
+    {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "2", "group": "playerCount", "checked": true},
+    {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "4", "group": "playerCount"},
+
+    {"component": "Label", "position": "center left", "width": 275, "height": 80, "text": "Activer les bonus", "font": {"size": "28px", "family": "Arial"}},
+    {"component": "Checkbox", "position": "center left", "width": 40, "height": 40, "id": "enableBonuses"},
+    null,
+
+    {"component": "Label", "position": "center left", "width": 275, "height": 80, "text": "Activer les malus", "font": {"size": "28px", "family": "Arial"}},
+    {"component": "Checkbox", "position": "center left", "width": 40, "height": 40, "id": "enablePenalties"},
+    null,
+
+    {"component": "Label", "position": "center left", "width": 275, "height": 80, "text": "Activer les autres", "font": {"size": "28px", "family": "Arial"}},
+    {"component": "Checkbox", "position": "center left", "width": 40, "height": 40, "id": "enableOthers"},
+    null,
+
+    {
+      "component": "Window",
+      "position": { "x": 0, "y": 0 },
+      "width": 1000,
+      "height": 80,
+      "layout": [3, 2],
+      "children": [
+        {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "player_kevin", "group": "playerSkin0", "image": "/images/assets/game/players/kevin.png", "checkmark": "/images/assets/game/players/kevin.png", "checked": true},
+        {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "player_mathieu", "group": "playerSkin0", "image": "/images/assets/game/players/mathieu.png", "checkmark": "/images/assets/game/players/mathieu.png"},
+        {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "player_italia", "group": "playerSkin0", "image": "/images/assets/game/players/player.png", "checkmark": "/images/assets/game/players/player.png"},
+
+        {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "player_kevin", "group": "playerSkin1", "image": "/images/assets/game/players/kevin.png", "checkmark": "/images/assets/game/players/kevin.png", "checked": true},
+        {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "player_mathieu", "group": "playerSkin1", "image": "/images/assets/game/players/mathieu.png", "checkmark": "/images/assets/game/players/mathieu.png"},
+        {"component": "Radio", "position": "center left", "width": 40, "height": 40, "text": "player_italia", "group": "playerSkin1", "image": "/images/assets/game/players/player.png", "checkmark": "/images/assets/game/players/player.png"}
+      ]
+    },
+    null,
+    null,
+
+    null,
+    {"id": "offlineLaunchButton", "component": "Button", "position": "center left", "text": "Start", "width": 225, "height": 80},
+    {"id": "offlineCancelButton", "component": "Button", "position": "center left", "text": "Annuler", "width": 225, "height": 80}
+  ]
+}

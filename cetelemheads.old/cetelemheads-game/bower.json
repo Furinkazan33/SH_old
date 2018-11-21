@@ -1,0 +1,7 @@
+{
+  "name": "sportsheads",
+  "dependencies": {
+    "phaser": "*",
+    "requirejs": "*"
+  }
+}
